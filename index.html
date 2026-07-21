@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tristan Leymonie — Réparation électronique &amp; dispositifs sur mesure</title>
+<meta name="description" content="Réparation rapide et fiable de téléphones, consoles et ordinateurs. Conception de dispositifs électroniques sur mesure.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header class="navbar" id="navbar">
+  <div class="navbar__inner">
+    <a href="#top" class="brand">
+      <span class="brand__mark" aria-hidden="true">
+        <!-- Emplacement logo carré 500x500px : remplacer le contenu de ce span par <img src="logo.jpg" alt="Logo Tristan Leymonie"> -->
+        <span class="brand__logo-placeholder">TL</span>
+      </span>
+      <span class="brand__name">Tristan&nbsp;Leymonie</span>
+    </a>
+
+    <nav class="nav" id="nav">
+      <a href="#localisation" class="nav__link">Où nous trouver</a>
+      <a href="#services" class="nav__link">Services</a>
+      <a href="#contact" class="nav__link">Contact</a>
+      <a href="#contact" class="nav__cta">Demander un devis</a>
+    </nav>
+
+    <button class="hamburger" id="hamburger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" id="hero">
+    <div class="hero__inner">
+      <div class="hero__copy">
+        <p class="eyebrow">// atelier de réparation &amp; conception</p>
+        <h1 class="hero__title">Réparation chez<br><span>Tristan Leymonie</span></h1>
+        <p class="hero__tagline">
+          Réparation rapide et fiable d'appareils électroniques ainsi que conception de dispositifs
+          sur mesure adaptés aux besoins, pour prolonger la durée de vie des équipements ou donner
+          vie à des projets technologiques.
+        </p>
+        <div class="hero__actions">
+          <a href="#contact" class="btn btn--primary">Demander un devis</a>
+          <a href="#services" class="btn btn--ghost">Voir mes services</a>
+        </div>
+        <ul class="hero__stats">
+          <li><span class="hero__stats-num">15&nbsp;€</span>dès un diagnostic</li>
+          <li><span class="hero__stats-num">3</span>familles d'appareils prises en charge</li>
+          <li><span class="hero__stats-num">100%</span>devis sur mesure possible</li>
+        </ul>
+      </div>
+
+      <div class="hero__visual" aria-hidden="true">
+        <svg viewBox="0 0 480 480" class="circuit-svg" role="img" aria-label="Illustration d'un circuit imprimé animé">
+          <g class="circuit-traces">
+            <path class="trace" d="M40 240 H140 V120 H240" />
+            <path class="trace" d="M40 240 H140 V360 H260" />
+            <path class="trace" d="M260 360 V300 H400" />
+            <path class="trace" d="M240 120 H340 V200 H440" />
+            <path class="trace" d="M240 120 V60 H400" />
+            <path class="trace" d="M340 200 V260 H400" />
+          </g>
+          <g class="circuit-pads">
+            <circle class="pad" cx="40" cy="240" r="7"/>
+            <circle class="pad" cx="140" cy="120" r="5"/>
+            <circle class="pad" cx="240" cy="120" r="7"/>
+            <circle class="pad" cx="140" cy="360" r="5"/>
+            <circle class="pad" cx="260" cy="360" r="6"/>
+            <circle class="pad" cx="400" cy="300" r="7"/>
+            <circle class="pad" cx="340" cy="200" r="6"/>
+            <circle class="pad" cx="440" cy="200" r="7"/>
+            <circle class="pad" cx="400" cy="60" r="6"/>
+            <circle class="pad" cx="400" cy="260" r="5"/>
+          </g>
+          <rect class="chip" x="190" y="190" width="100" height="100" rx="6"/>
+          <g class="chip-pins">
+            <line x1="190" y1="205" x2="170" y2="205"/>
+            <line x1="190" y1="225" x2="170" y2="225"/>
+            <line x1="190" y1="245" x2="170" y2="245"/>
+            <line x1="190" y1="265" x2="170" y2="265"/>
+            <line x1="290" y1="205" x2="310" y2="205"/>
+            <line x1="290" y1="225" x2="310" y2="225"/>
+            <line x1="290" y1="245" x2="310" y2="245"/>
+            <line x1="290" y1="265" x2="310" y2="265"/>
+          </g>
+          <circle class="pulse" r="5">
+            <animateMotion dur="4s" repeatCount="indefinite"
+              path="M40 240 H140 V120 H240 V190" />
+          </circle>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= LOCALISATION ================= -->
+  <section class="section" id="localisation">
+    <div class="section__inner location">
+      <div class="section__head">
+        <p class="eyebrow">// localisation</p>
+        <h2>Où nous trouver</h2>
+      </div>
+
+      <div class="location__grid">
+        <div class="location__map">
+          <iframe
+            title="Carte d'accès à l'atelier Tristan Leymonie"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39958.779713563126!2d1.3994424236912273!3d47.42096079204517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47fb5315b7df7685%3A0x22fa9daac2b1f145!2sContres%2C%2041700%20Le%20Controis-en-Sologne!5e1!3m2!1sfr!2sfr!4v1784662490466!5m2!1sfr!2sfr"
+            width="100%" height="100%" style="border:0;" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+
+        <div class="location__card">
+          <h3>Infos pratiques</h3>
+          <dl class="info-list">
+            <div class="info-list__row">
+              <dt>Adresse</dt>
+              <dd data-placeholder="adresse">Contres</dd>
+            </div>
+            <div class="info-list__row">
+              <dt>E-mail</dt>
+              <dd><a href="mailto:leymonie.t.pro@proton.me">leymonie.t.pro@proton.me</a></dd>
+            </div>
+            <div class="info-list__row">
+              <dt>Téléphone</dt>
+              <dd data-placeholder="telephone">+33 7 83 66 19 91</dd>
+            </div>
+            <div class="info-list__row">
+              <dt>Horaires</dt>
+              <dd data-placeholder="horaires">
+                Lundi – Vendredi : 8h-19h<br>
+                Samedi : 9h-16h
+              </dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SERVICES ================= -->
+  <section class="section section--alt" id="services">
+    <div class="section__inner">
+      <div class="section__head">
+        <p class="eyebrow">// services &amp; estimation</p>
+        <h2>Services &amp; tarifs indicatifs</h2>
+        <p class="section__lede">Sélectionnez une famille d'appareils pour afficher le détail des interventions et leurs fourchettes de prix.</p>
+      </div>
+
+      <div class="tabs" id="service-tabs">
+        <div class="tabs__nav" role="tablist" aria-label="Catégories de services">
+          <button class="tabs__btn is-active" role="tab" aria-selected="true" aria-controls="panel-tel" id="tab-tel" data-target="panel-tel">
+            <span class="tabs__pin">BROCHE 01</span> Téléphones
+          </button>
+          <button class="tabs__btn" role="tab" aria-selected="false" aria-controls="panel-console" id="tab-console" data-target="panel-console">
+            <span class="tabs__pin">BROCHE 02</span> Consoles
+          </button>
+          <button class="tabs__btn" role="tab" aria-selected="false" aria-controls="panel-pc" id="tab-pc" data-target="panel-pc">
+            <span class="tabs__pin">BROCHE 03</span> Ordinateurs
+          </button>
+          <button class="tabs__btn" role="tab" aria-selected="false" aria-controls="panel-sur-mesure" id="tab-sur-mesure" data-target="panel-sur-mesure">
+            <span class="tabs__pin">BROCHE 04</span> Sur mesure
+          </button>
+        </div>
+
+        <!-- PANEL: TÉLÉPHONES -->
+        <div class="tabs__panel is-active" id="panel-tel" role="tabpanel" aria-labelledby="tab-tel">
+          <div class="service-card">
+            <h3>Diagnostic de panne</h3>
+            <ul class="price-list">
+              <li><span>Diagnostic commun (téléphone, tablette…)</span><strong>15 – 25 €</strong></li>
+              <li><span>Diagnostic de carte électronique</span><strong>25 – 40 €</strong></li>
+              <li><span>Diagnostic très poussé (carte mère, court-circuit non localisé, plusieurs heures)</span><strong>40 – 60 €</strong></li>
+            </ul>
+          </div>
+          <div class="service-card">
+            <h3>Remplacement d'écran</h3>
+            <ul class="price-list">
+              <li><span>Téléphone basique entrée de gamme</span><strong>70 – 130</strong></li>
+              <li><span>Téléphone haut de gamme (OLED, incurvé…)</span><strong>90 – 180 €</strong></li>
+            </ul>
+          </div>
+          <div class="service-card">
+            <h3>Réparation de batterie</h3>
+            <ul class="price-list">
+              <li><span>Téléphone</span><strong>30 – 60 €</strong></li>
+              <li><span>Tablette</span><strong>40 – 70 €</strong></li>
+            </ul>
+          </div>
+          <div class="service-card">
+            <h3>Réparation de connecteur de charge</h3>
+            <ul class="price-list">
+              <li><span>Nappe de charge à remplacer</span><strong>30 – 50 €</strong></li>
+              <li><span>Micro-soudure connecteur sur carte mère</span><strong>50 – 90 €</strong></li>
+              <li><span>Cas complexe (pins arrachées, dégâts PCB)</span><strong>80 – 150 €</strong></li>
+            </ul>
+          </div>
+          <div class="service-card">
+            <h3>Désoxydation après contact liquide</h3>
+            <ul class="price-list">
+              <li><span>Nettoyage simple (contact récent, peu de corrosion)</span><strong>40 – 70 €</strong></li>
+              <li><span>Cas avancé (corrosion visible, composants touchés)</span><strong>70 – 120 €</strong></li>
+              <li><span>Appareil très touché — sans garantie de réussite</span><strong>Devis sur mesure</strong></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- PANEL: CONSOLES -->
+        <div class="tabs__panel" id="panel-console" role="tabpanel" aria-labelledby="tab-console" hidden>
+          <div class="service-card">
+            <h3>Diagnostic de panne</h3>
+            <ul class="price-list">
+              <li><span>Diagnostic commun</span><strong>15 – 25 €</strong></li>
+              <li><span>Diagnostic de carte électronique</span><strong>25 – 40 €</strong></li>
+              <li><span>Diagnostic très poussé</span><strong>40 – 60 €</strong></li>
+            </ul>
+          </div>
+          <div class="service-card">
+            <h3>Réparation de consoles de jeux</h3>
+            <ul class="price-list">
+              <li><span>Remplacement joystick Joy-Con (1 stick)</span><strong>20 – 35 €</strong></li>
+              <li><span>Manette Pro Controller (drift)</span><strong>30 – 50 €</strong></li>
+              <li><span>Lecteur optique (nettoyage)</span><strong>30 – 50 €</strong></li>
+              <li><span>Lecteur optique (remplacement complet)</span><strong>50 – 90 €</strong></li>
+              <li><span>Port HDMI (micro-soudure)</span><strong>50 – 90 €</strong></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- PANEL: ORDINATEURS -->
+        <div class="tabs__panel" id="panel-pc" role="tabpanel" aria-labelledby="tab-pc" hidden>
+          <div class="service-card">
+            <h3>Diagnostic de panne</h3>
+            <ul class="price-list">
+              <li><span>Diagnostic commun</span><strong>15 – 25 €</strong></li>
+              <li><span>Diagnostic carte électronique / PC portable</span><strong>25 – 40 €</strong></li>
+              <li><span>Diagnostic très poussé</span><strong>40 – 60 €</strong></li>
+            </ul>
+          </div>
+          <div class="service-card">
+            <h3>Remplacement d'écran</h3>
+            <ul class="price-list">
+              <li><span>PC portable</span><strong>60 – 100 €</strong></li>
+            </ul>
+          </div>
+          <div class="service-card">
+            <h3>Réparation de batterie</h3>
+            <ul class="price-list">
+              <li><span>PC portable</span><strong>40 – 80 €</strong></li>
+            </ul>
+          </div>
+          <div class="service-card">
+            <h3>Réparation de connecteur de charge</h3>
+            <ul class="price-list">
+              <li><span>Nappe de charge à remplacer</span><strong>30 – 50 €</strong></li>
+              <li><span>Micro-soudure connecteur sur carte mère</span><strong>50 – 90 €</strong></li>
+              <li><span>Cas complexe</span><strong>80 – 150 €</strong></li>
+            </ul>
+          </div>
+          <div class="service-card">
+            <h3>Désoxydation après contact liquide</h3>
+            <ul class="price-list">
+              <li><span>Nettoyage simple</span><strong>40 – 70 €</strong></li>
+              <li><span>Cas avancé</span><strong>70 – 120 €</strong></li>
+              <li><span>Cas très lourd</span><strong>100 – 150 €</strong></li>
+            </ul>
+          </div>
+          <div class="service-card">
+            <h3>Nettoyage interne + optimisation</h3>
+            <ul class="price-list">
+              <li><span>Nettoyage physique seul (PC tour)</span><strong>25 – 40 €</strong></li>
+              <li><span>Nettoyage + pâte thermique</span><strong>35 – 55 €</strong></li>
+              <li><span>Nettoyage + optimisation logicielle complète</span><strong>50 – 80 €</strong></li>
+              <li><span>Surcoût Laptop (démontage plus délicat)</span><strong>+10 – 20 €</strong></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- PANEL: SUR MESURE -->
+        <div class="tabs__panel" id="panel-sur-mesure" role="tabpanel" aria-labelledby="tab-sur-mesure" hidden>
+          <div class="service-card service-card--custom">
+            <h3>Dispositifs sur mesure</h3>
+            <p>Conception électronique adaptée à votre projet — automatisation, prototypage, réparation hors standard.</p>
+            <p class="price-tag">Devis sur mesure</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="informatif">
+        <p>Les prix sont à titre informatif, ils peuvent fortement varier en rapport avec la demande. Un devis sera fait.</p>
+      </div>
+
+      <div class="deplacement">
+        <p>Pas besoin de vous déplacer, je viens chercher vos appareils directement et les ramène à l'atelier ou réparation sur place quand cela est possible !</p>
+      </div>
+
+      <div class="callout">
+        <p>Votre problème n'apparaît pas dans la liste ? Pas d'inquiétude ! Contactez-moi directement pour une étude personnalisée de votre appareil.</p>
+        <a href="#contact" class="btn btn--primary btn--sm">Décrire mon problème</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section class="section" id="contact">
+    <div class="section__inner contact">
+      <div class="section__head">
+        <p class="eyebrow">// contact</p>
+        <h2>Parlons de votre appareil</h2>
+      </div>
+
+      <div class="contact__grid">
+        <form class="contact-form" id="contact-form"
+            action="https://formspree.io/f/xeeyzryr"
+            method="POST" novalidate>
+
+          <div class="field">
+            <label for="name">Nom complet</label>
+            <input type="text" id="name" name="name" required autocomplete="name">
+            <span class="field__error" data-error-for="name"></span>
+          </div>
+
+          <div class="field">
+            <label for="email">Adresse e-mail</label>
+            <input type="email" id="email" name="email" required autocomplete="email">
+            <span class="field__error" data-error-for="email"></span>
+          </div>
+
+          <div class="field">
+            <label for="subject">Objet du message</label>
+            <select id="subject" name="subject" required>
+              <option value="" disabled selected>Choisissez un objet</option>
+              <option value="Devis téléphone">Devis — Téléphone / tablette</option>
+              <option value="Devis console">Devis — Console</option>
+              <option value="Devis ordinateur">Devis — Ordinateur</option>
+              <option value="Projet sur mesure">Projet sur mesure</option>
+              <option value="Autre">Autre demande</option>
+            </select>
+            <span class="field__error" data-error-for="subject"></span>
+          </div>
+
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <span class="field__error" data-error-for="message"></span>
+          </div>
+
+          <!-- Honeypot anti-robot : champ invisible, doit rester vide -->
+          <div class="field field--honeypot" aria-hidden="true">
+            <label for="company">Ne pas remplir ce champ</label>
+            <input type="text" id="company" name="company" tabindex="-1" autocomplete="off">
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--block">Envoyer le message</button>
+          <p class="form__status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+
+        <div class="contact__aside">
+          <h3>Coordonnées directes</h3>
+          <p><a href="mailto:leymonie.t.pro@proton.me">leymonie.t.pro@proton.me</a></p>
+          <p data-placeholder="telephone">+33 7 83 66 19 91</p>
+          <p class="contact__note">Réponse sous 24 à 48h ouvrées.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <span class="brand__logo-placeholder brand__logo-placeholder--sm" aria-hidden="true">TL</span>
+      <span>Tristan Leymonie</span>
+    </div>
+
+    <nav class="footer__nav">
+      <a href="#localisation">Où nous trouver</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="footer__contact">
+      <a href="mailto:leymonie.t.pro@proton.me">leymonie.t.pro@proton.me</a>
+      <span data-placeholder="adresse">Contres</span>
+      <span data-placeholder="telephone">+33 7 83 66 19 91</span>
+    </div>
+
+    <div class="footer__legal">
+      <a href="#">Mentions légales</a>
+      <a href="#">Politique de confidentialité</a>
+    </div>
+  </div>
+  <p class="footer__copy">© 2026 Tristan Leymonie — Tous droits réservés.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
