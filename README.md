@@ -13,7 +13,7 @@ README.md    → ce fichier
 
 À compléter avant mise en ligne :
 - Le logo carré (500x500px) : remplacez le placeholder `TL` dans `index.html` par
-  `<img src="logo.jpg" alt="Logo Tristan Leymonie">` et ajoutez `logo.jpg` au dossier.
+  `<img src="logo.png" alt="Logo Tristan Leymonie">` et ajoutez `logo.png` au dossier.
 - L'adresse du local, le numéro de téléphone et les horaires (marqués `[à compléter]`
   dans `index.html`).
 - L'URL de la carte Google Maps (voir plus bas).
@@ -23,7 +23,7 @@ README.md    → ce fichier
 ## 1. Déployer sur GitHub Pages (gratuit)
 
 1. Créez un dépôt GitHub (par exemple `tristan-leymonie-site`).
-2. Ajoutez les fichiers `index.html`, `styles.css`, `script.js` (et votre `logo.jpg`)
+2. Ajoutez les fichiers `index.html`, `styles.css`, `script.js` (et votre `logo.png`)
    à la racine du dépôt, puis validez (commit) et poussez (push).
 3. Dans le dépôt GitHub : **Settings → Pages**.
 4. Sous **Build and deployment**, choisissez **Deploy from a branch**, sélectionnez
