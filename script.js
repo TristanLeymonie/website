@@ -152,8 +152,5 @@ function initContactForm() {
        statusEl.textContent = 'Une erreur est survenue, réessayez plus tard.';
        statusEl.className = 'form__status is-error';
      });
-
-    statusEl.textContent = 'Message pr\u00eat \u00e0 \u00eatre envoy\u00e9 \u2014 connectez un service d\u2019envoi (voir README.md).';
-    statusEl.className = 'form__status is-success';
   });
 }
